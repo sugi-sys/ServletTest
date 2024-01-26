@@ -1,0 +1,8 @@
+<servlet>
+	<servlet-name>ChangeForwardServletMapping</servlet-name>
+	<servlet-class>ch09.ChangeForwardServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>ChangeForwardServletMapping</servlet-name>
+	<url-pattern>/ChangeForwardServlet</url-pattern>
+</servlet-mapping>

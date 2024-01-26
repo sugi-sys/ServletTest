@@ -1,0 +1,51 @@
+package plusCalc;
+
+import java.io.IOException;
+
+import jakarta.servlet.RequestDispatcher;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+
+public class Plus extends HttpServlet {
+
+	private static final long serialVersionUID = 1L;
+	
+	public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
+		String strNum1 = request.getParameter("num1");
+		String strNum2 = request.getParameter("num2");
+		
+		String message = null;
+		
+		if (strNum1 == null || strNum2 == null) {
+			message = "フォーム以外から入力されました";
+		} else if (strNum1.equals("") || strNum2.equals("")) {
+			message = "どちらかの数字が入力されていません";
+		} else {
+			try {
+				Integer.parseInt(strNum1);
+				Integer.parseInt(strNum2);
+			} catch (NumberFormatException e) {
+				message = "数字のみの入力をお願いします";
+			}
+		}
+		
+		if (message == null) {
+			
+		} else {
+			request.getRequestDispatcher("/error.jsp").forward(request, response);
+		}
+			
+			
+			
+			
+		
+		
+//		request.setAttribute("bookTitle", "JSP/サーブレットの本");
+//		
+
+		
+	}
+}

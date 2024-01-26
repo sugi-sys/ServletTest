@@ -1,0 +1,7 @@
+INDEX VERSION 1.134
+/Users/sugimoto/eclipse-workspace/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/4130704668.index
+/Web_App_calc/src/main/java
+/Users/sugimoto/eclipse-workspace/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/1764246893.index
+/web_basic/src/main/java
+/Users/sugimoto/eclipse-workspace/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/2643284026.index
+/Web_App_calc/src/main/java
